@@ -1,0 +1,11 @@
+services:
+  sentinel:
+    build: .
+    ports:
+      - "127.0.0.1:8082:8082"
+    environment:
+      APP_ORIGIN: http://localhost:8082
+    volumes:
+      - sentinel-data:/data
+volumes:
+  sentinel-data:

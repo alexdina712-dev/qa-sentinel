@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-10-06T08:01:12.429556+00:00",
+  "scope": "Four deliberately selected regressions; not a whole-codebase mutation score.",
+  "results": [
+    {
+      "id": "BUG-001",
+      "title": "Cross-account task disclosure",
+      "test": "test_cross_user_reads_are_hidden",
+      "baseline": "passed",
+      "mutant": "detected",
+      "assertion": "AssertionError: assert 200 == 404"
+    },
+    {
+      "id": "BUG-002",
+      "title": "Stale edit overwrites newer work",
+      "test": "test_stale_update_is_rejected",
+      "baseline": "passed",
+      "mutant": "detected",
+      "assertion": "AssertionError: assert 200 == 409"
+    },
+    {
+      "id": "BUG-003",
+      "title": "Whitespace-only title accepted",
+      "test": "test_whitespace_title_rejected",
+      "baseline": "passed",
+      "mutant": "detected",
+      "assertion": "AssertionError: assert 201 == 422"
+    },
+    {
+      "id": "BUG-004",
+      "title": "Captured session survives logout",
+      "test": "test_logout_revokes_captured_session",
+      "baseline": "passed",
+      "mutant": "detected",
+      "assertion": "AssertionError: assert 200 == 401"
+    }
+  ],
+  "production_source_unchanged": true
+}

@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-10-06T08:01:33.980874+00:00",
+  "suites": [
+    {
+      "suite": "pytest: domain + API",
+      "passed": 48,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "Vitest: client validation",
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "suite": "Playwright: isolated UI + HTTP",
+      "passed": 78,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "mutations": "4/4 selected bugs detected after passing baselines. Not a whole-project mutation score."
+}

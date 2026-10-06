@@ -1,0 +1,10 @@
+node_modules
+.venv
+.git
+.env*
+.runtime
+reports
+playwright-report
+test-results
+docs
+work
