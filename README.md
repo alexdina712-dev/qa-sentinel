@@ -8,6 +8,10 @@ This is an AI-assisted portfolio project. Its source, reproducible tests, limita
 
 [Live demo](https://qa-sentinel-dina19.vercel.app) · [GitHub](https://github.com/alexdina712-dev/qa-sentinel) · [CI runs](https://github.com/alexdina712-dev/qa-sentinel/actions)
 
+## Verification snapshot
+
+On 6 October 2026: 48 pytest and 12 Vitest checks passed; the 39-case Playwright suite passed twice (78 executions, zero retries/failures/skips); all 8 public smoke executions passed; four selected deliberate bugs were detected. Dependency audits reported zero known advisories at the time checked. See `docs/evidence/` for dated machine summaries. GitHub Actions also runs the suite on Linux.
+
 ## What is included
 
 - React/TypeScript workbench with account registration, login/logout, persistent local sessions, protected pages, task CRUD, search, status/priority filters, pagination, dashboard, activity, and deletion controls.

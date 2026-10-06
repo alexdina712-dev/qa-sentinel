@@ -11,7 +11,8 @@ if (-not (Test-Path -LiteralPath $pythonExe)) {
 }
 & $pythonExe -c 'import sys; sys.exit(0 if sys.version_info[:2] == (3,12) else 1)'
 if ($LASTEXITCODE -ne 0) { throw 'Python 3.12 is required for the tested dependency lock.' }
-$requirementsHash = ((Get-FileHash backend/requirements.txt).Hash + (Get-FileHash backend/requirements-dev.txt).Hash)
+$requirementsHash = & $pythonExe (Join-Path $PSScriptRoot 'dependency_hash.py')
+if ($LASTEXITCODE -ne 0) { throw 'Could not verify dependency requirements.' }
 $installStamp = '.venv\.qasentinel-installed'
 if (-not (Test-Path $installStamp) -or (Get-Content $installStamp -Raw).Trim() -ne $requirementsHash) {
     & $pythonExe -m pip install -r backend/requirements-dev.txt

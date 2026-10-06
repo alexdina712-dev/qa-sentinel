@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-06T08:10:35.025749+00:00",
+  "url": "https://qa-sentinel-dina19.vercel.app",
+  "stats": {
+    "startTime": "2026-10-06T08:07:38.501Z",
+    "duration": 38905.509999999995,
+    "expected": 8,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "scope": "Four public workflows on desktop and mobile; private fictional accounts cleaned by fixtures."
+}
