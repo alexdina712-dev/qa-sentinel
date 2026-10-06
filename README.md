@@ -6,6 +6,8 @@ A QA automation portfolio built around a real, deliberately small task-managemen
 
 This is an AI-assisted portfolio project. Its source, reproducible tests, limitations, and development findings are provided so its engineering decisions can be reviewed. It is not a claim of prior commercial employment or independently acquired expertise.
 
+[Live demo](https://qa-sentinel-dina19.vercel.app) · [GitHub](https://github.com/alexdina712-dev/qa-sentinel) · [CI runs](https://github.com/alexdina712-dev/qa-sentinel/actions)
+
 ## What is included
 
 - React/TypeScript workbench with account registration, login/logout, persistent local sessions, protected pages, task CRUD, search, status/priority filters, pagination, dashboard, activity, and deletion controls.
